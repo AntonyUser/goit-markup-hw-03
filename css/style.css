@@ -15,6 +15,27 @@ body {
     font-family: var(--main-font-family);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+}
+
 .list {
     list-style: none;
 }
@@ -40,6 +61,10 @@ body {
 
 
 /*------HEADER------*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .logo {
     font-family: var(--secondary-font-family);
@@ -91,6 +116,7 @@ body {
 .hero {
     background-color: var(--primary-background-color);
     color: var(--hero-text-color);
+    text-align: center;
 }
 
 .hero-title {
@@ -100,6 +126,9 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-left: 237px;
+    padding-right: 237px;
 }
 
 .btn {
@@ -116,6 +145,25 @@ body {
     color: inherit;
 }
 
+.hero-btn {
+    display: inline-block;
+}
+
+.main-tasks .container {
+    padding-top: 85px;
+    padding-bottom: 94px;
+}
+
+.main-tasks-item {
+    display: inline-block;
+    margin-left: 30px;
+    width: 22.5%;
+}
+
+.main-tasks-item:first-child {
+    margin-left: 0;
+}
+
 .main-tasks-title {
     font-weight: 700;
     font-size: var(--text-font-size);
@@ -123,6 +171,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 
 .main-tasks-text {
@@ -141,10 +190,39 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.our-work .container,
+.our-team .container {
+    padding-bottom: 94px;
+}
+
+.our-work-item {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.our-work-item:first-child {
+    margin-left: 0;
 }
 
 .our-team {
     background-color: var(--secondary-background-color);
+}
+
+.our-team .img {
+    margin-bottom: 30px;
+}
+
+.our-team-item {
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+.our-team-item:first-child {
+    margin-left: 0;
 }
 
 .our-team-name,
@@ -155,15 +233,26 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 
 .our-team-text {
     font-weight: 400;
     color: var(--secondary-text-color);
+    margin-bottom: 0;
 }
 
 
 /*---PORTFOLIO----*/
+
+.portfolio .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-btn-list {
+    margin-bottom: 34px;
+}
 
 .portfolio-btn {
     font-weight: 500;
@@ -186,12 +275,27 @@ body {
     color: var(--hero-text-color);
 }
 
+.portfolio .portfolio-item {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.portfolio .img {
+    margin-bottom: 20px;
+}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -203,16 +307,20 @@ body {
 }
 
 
-/*---PORTFOLIO----*/
-
-
-/*------MAIN------*/
-
-
 /*------FOOTER------*/
 
 .footer {
     background-color: var(--primary-background-color);
+}
+
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container>a {
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .address-link {
