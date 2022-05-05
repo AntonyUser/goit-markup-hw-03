@@ -73,6 +73,12 @@ ul {
     align-items: center;
 }
 
+.header .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .header .nav-item+.nav-item {
     margin-left: 50px;
 }
