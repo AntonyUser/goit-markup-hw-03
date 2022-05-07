@@ -194,8 +194,11 @@ ul {
     display: flex;
 }
 
+
+/* для display:flex вместо width нужно использовать flex-basis */
+
 .main-tasks-item {
-    width: calc((100%-30)/4);
+    flex-basis: calc((100% - 30) / 4);
 }
 
 .main-tasks-item+.main-tasks-item {
@@ -347,8 +350,14 @@ ul {
     flex-wrap: wrap;
 }
 
+
+/* для display:flex вместо width нужно использовать flex-basis */
+
+
+/* gap: 30px - забивка флекс-сетки на маржине 30 */
+
 .portfolio-item {
-    width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
