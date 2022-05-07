@@ -145,16 +145,20 @@ ul {
 /*------MAIN------*/
 
 .hero {
+    padding: 200px 0;
     text-align: center;
     background-color: var(--primary-background-color);
     color: var(--hero-text-color);
 }
 
-.hero-title {
+.hero .container {
     max-width: 696px;
-    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -185,10 +189,6 @@ ul {
 
 
 /* Main tasks  */
-
-.main-tasks .container {
-    padding-top: 85px;
-}
 
 .main-tasks-list {
     display: flex;
@@ -222,6 +222,16 @@ ul {
 
 
 /* OUR WORK */
+
+.our-work {
+    padding-top: 0;
+}
+
+.our-work .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .our-work-title,
 .our-team-title {
@@ -268,6 +278,11 @@ ul {
     margin-left: 30px;
 }
 
+.our-team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .our-team-name,
 .our-team-text {
     font-weight: 500;
@@ -283,15 +298,14 @@ ul {
     font-weight: 400;
     color: var(--secondary-text-color);
     margin-bottom: 0;
-    padding-bottom: 30px;
 }
 
 
 /*---PORTFOLIO----*/
 
-.portfolio .btn-list {
+.btn-list {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -320,16 +334,12 @@ ul {
     color: var(--hero-text-color);
 }
 
-.portfolio .item {
+.btn-list .item {
     margin-right: 8px;
 }
 
-.portfolio .item:last-child {
+.btn-list .item:last-child {
     margin-right: 0px;
-}
-
-.portfolio .img {
-    margin-bottom: 20px;
 }
 
 .portfolio-list {
@@ -351,6 +361,21 @@ ul {
     margin-bottom: 0;
 }
 
+.portfolio-item .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-description {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+
 .portfolio-title {
     margin-bottom: 4px;
     font-weight: 700;
@@ -368,21 +393,17 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.portfolio-title,
-.portfolio-text {
-    padding-left: 24px;
-}
-
 
 /*------FOOTER------*/
 
 .footer {
     background-color: var(--primary-background-color);
-}
-
-.footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer .logo {
+    margin-right: 0;
 }
 
 .logo-footer,
